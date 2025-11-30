@@ -23,7 +23,13 @@ export function ModeToggle() {
       }
     };
 
-    if (!document.startViewTransition) {
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    const isMobile =
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      );
+
+    if (!document.startViewTransition || isSafari || isMobile) {
       performChange();
       return;
     }
