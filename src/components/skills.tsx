@@ -72,13 +72,13 @@ export function Skills() {
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead className="w-[30%]">
+                      <TableHead className="w-[40%]">
                         {t("skills.headers.technology")}
                       </TableHead>
                       <TableHead className="w-[40%]">
                         {t("skills.headers.proficiency")}
                       </TableHead>
-                      <TableHead className="text-right">
+                      <TableHead className="w-[20%] text-right">
                         {t("skills.headers.experience")}
                       </TableHead>
                     </TableRow>
