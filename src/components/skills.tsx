@@ -66,7 +66,7 @@ export function Skills() {
               <h3 className="text-2xl font-semibold border-b pb-2">
                 {category.name}
               </h3>
-              <div className="rounded-md border">
+              <div className="rounded-md border hover:shadow-md transition-shadow duration-300 bg-card/50 backdrop-blur-sm">
                 <Table>
                   <TableHeader>
                     <TableRow>

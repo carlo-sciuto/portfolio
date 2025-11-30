@@ -57,7 +57,7 @@ export function Experience() {
         {Array.isArray(items) &&
           items.map((experience, index) => (
             <motion.div key={index} variants={item}>
-              <Card className="border-l-4 border-l-primary">
+              <Card className="border-l-4 border-l-primary hover:shadow-lg hover:-translate-y-1 transition-all duration-300 hover:border-l-primary/80">
                 <CardHeader>
                   <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
                     <CardTitle className="text-xl">{experience.role}</CardTitle>

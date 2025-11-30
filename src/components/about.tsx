@@ -47,7 +47,7 @@ export function About() {
         {Array.isArray(sections) &&
           sections.map((section, index) => (
             <motion.div key={index} variants={item}>
-              <Card>
+              <Card className="hover:shadow-md transition-shadow duration-300">
                 <CardHeader>
                   <CardTitle>{section.title}</CardTitle>
                 </CardHeader>
