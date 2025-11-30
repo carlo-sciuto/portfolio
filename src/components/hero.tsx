@@ -1,37 +1,64 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 
 export function Hero() {
   const { t } = useTranslation();
 
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const mouseX = useSpring(x, { stiffness: 500, damping: 50 });
+  const mouseY = useSpring(y, { stiffness: 500, damping: 50 });
+
+  const rotateX = useTransform(mouseY, [-0.5, 0.5], ["17.5deg", "-17.5deg"]);
+  const rotateY = useTransform(mouseX, [-0.5, 0.5], ["-17.5deg", "17.5deg"]);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const width = rect.width;
+    const height = rect.height;
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+    const xPct = mouseX / width - 0.5;
+    const yPct = mouseY / height - 0.5;
+    x.set(xPct);
+    y.set(yPct);
+  };
+
+  const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
+
   return (
     <section
       id="hero"
       className="min-h-[90vh] flex flex-col items-center justify-center text-center gap-8 py-12 relative"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
     >
-      <motion.div
-        initial={{ scale: 0, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{
-          type: "spring",
-          stiffness: 260,
-          damping: 20,
-          duration: 0.5,
-        }}
-      >
-        <div className="relative">
-          <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary to-secondary opacity-75 blur transition duration-1000 group-hover:opacity-100 animate-pulse" />
+      <div className="[perspective:1000px]">
+        <motion.div
+          className="relative"
+          style={{
+            rotateX,
+            rotateY,
+            transformStyle: "preserve-3d",
+          }}
+        >
+          <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary to-secondary opacity-75 blur" />
           <Avatar className="h-48 w-48 border-4 border-background relative">
             <AvatarImage
               src="https://github.com/carlo-sciuto.png"
               alt="Carlo Sciuto"
+              className="object-cover"
             />
             <AvatarFallback>CS</AvatarFallback>
           </Avatar>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
 
       <motion.div
         className="space-y-4 max-w-2xl relative z-10"
@@ -51,7 +78,12 @@ export function Hero() {
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 1, repeat: Infinity, repeatType: "reverse" }}
+        transition={{
+          delay: 1,
+          duration: 1,
+          repeat: Infinity,
+          repeatType: "reverse",
+        }}
         className="absolute bottom-10"
       >
         <ArrowDown className="h-6 w-6 text-muted-foreground" />
