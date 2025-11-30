@@ -21,12 +21,37 @@ export function Navbar() {
               Carlo Sciuto
             </span>
           </a>
-                    <nav className="flex items-center space-x-6 text-sm font-medium">
-            <button onClick={() => scrollToSection('hero')} className="transition-colors hover:text-foreground/80 text-foreground/60">{t('nav.home')}</button>
-            <button onClick={() => scrollToSection('about')} className="transition-colors hover:text-foreground/80 text-foreground/60">{t('nav.about')}</button>
-            <button onClick={() => scrollToSection('experience')} className="transition-colors hover:text-foreground/80 text-foreground/60">{t('nav.experience')}</button>
-            <button onClick={() => scrollToSection('skills')} className="transition-colors hover:text-foreground/80 text-foreground/60">{t('nav.skills')}</button>
-            <button onClick={() => scrollToSection('contact')} className="transition-colors hover:text-foreground/80 text-foreground/60">{t('nav.contact')}</button>
+          <nav className="flex items-center space-x-6 text-sm font-medium">
+            <button
+              onClick={() => scrollToSection("hero")}
+              className="transition-colors hover:text-foreground/80 text-foreground/60"
+            >
+              {t("nav.home")}
+            </button>
+            <button
+              onClick={() => scrollToSection("about")}
+              className="transition-colors hover:text-foreground/80 text-foreground/60"
+            >
+              {t("nav.about")}
+            </button>
+            <button
+              onClick={() => scrollToSection("experience")}
+              className="transition-colors hover:text-foreground/80 text-foreground/60"
+            >
+              {t("nav.experience")}
+            </button>
+            <button
+              onClick={() => scrollToSection("skills")}
+              className="transition-colors hover:text-foreground/80 text-foreground/60"
+            >
+              {t("nav.skills")}
+            </button>
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="transition-colors hover:text-foreground/80 text-foreground/60"
+            >
+              {t("nav.contact")}
+            </button>
           </nav>
         </div>
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
