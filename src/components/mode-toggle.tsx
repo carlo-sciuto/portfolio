@@ -8,18 +8,53 @@ export function ModeToggle() {
   const { theme, setTheme } = useTheme();
   const { t } = useTranslation();
 
-  const toggleTheme = () => {
-    if (theme === "dark") {
-      setTheme("light");
-    } else if (theme === "light") {
-      setTheme("dark");
-    } else {
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-        .matches
-        ? "dark"
-        : "light";
-      setTheme(systemTheme === "dark" ? "light" : "dark");
+  const toggleTheme = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const performChange = () => {
+      if (theme === "dark") {
+        setTheme("light");
+      } else if (theme === "light") {
+        setTheme("dark");
+      } else {
+        const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
+          .matches
+          ? "dark"
+          : "light";
+        setTheme(systemTheme === "dark" ? "light" : "dark");
+      }
+    };
+
+    if (!document.startViewTransition) {
+      performChange();
+      return;
     }
+
+    const x = event.clientX;
+    const y = event.clientY;
+    const endRadius = Math.hypot(
+      Math.max(x, innerWidth - x),
+      Math.max(y, innerHeight - y)
+    );
+
+    const transition = document.startViewTransition(() => {
+      performChange();
+    });
+
+    transition.ready.then(() => {
+      const clipPath = [
+        `circle(0px at ${x}px ${y}px)`,
+        `circle(${endRadius}px at ${x}px ${y}px)`,
+      ];
+      document.documentElement.animate(
+        {
+          clipPath: clipPath,
+        },
+        {
+          duration: 700,
+          easing: "ease-in-out",
+          pseudoElement: "::view-transition-new(root)",
+        }
+      );
+    });
   };
 
   return (

@@ -58,6 +58,13 @@
   }
 }
 
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+
 ::selection {
   background: hsl(var(--primary));
   color: hsl(var(--primary-foreground));
