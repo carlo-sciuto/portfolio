@@ -9,11 +9,13 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { getSkillIcon } from "@/utils/skill-icons";
 
 interface SkillItem {
   name: string;
   rating: number;
   experience: string;
+  icon?: string;
 }
 
 interface SkillCategory {
@@ -82,32 +84,43 @@ export function Skills() {
                     </TableRow>
                   </TableHeader>
                   <TableBody>
-                    {category.items.map((item, i) => (
-                      <TableRow key={i}>
-                        <TableCell className="font-medium">
-                          {item.name}
-                        </TableCell>
-                        <TableCell>
-                          <div className="flex items-center gap-2">
-                            <div className="h-2 w-[60%] overflow-hidden rounded-full bg-primary/20">
-                              <motion.div
-                                className="h-full bg-primary"
-                                initial={{ width: 0 }}
-                                whileInView={{ width: `${item.rating}%` }}
-                                transition={{ duration: 1, ease: "easeOut" }}
-                                viewport={{ once: true }}
+                    {category.items.map((item, i) => {
+                      const { icon: Icon, color } = getSkillIcon(
+                        item.icon || item.name
+                      );
+                      return (
+                        <TableRow key={i}>
+                          <TableCell className="font-medium">
+                            <div className="flex items-center gap-2">
+                              <Icon
+                                className="h-5 w-5"
+                                style={{ color: color }}
                               />
+                              {item.name}
                             </div>
-                            <span className="text-xs text-muted-foreground">
-                              {item.rating}%
-                            </span>
-                          </div>
-                        </TableCell>
-                        <TableCell className="text-right">
-                          <Badge variant="secondary">{item.experience}</Badge>
-                        </TableCell>
-                      </TableRow>
-                    ))}
+                          </TableCell>
+                          <TableCell>
+                            <div className="flex items-center gap-2">
+                              <div className="h-2 w-[60%] overflow-hidden rounded-full bg-primary/20">
+                                <motion.div
+                                  className="h-full bg-primary"
+                                  initial={{ width: 0 }}
+                                  whileInView={{ width: `${item.rating}%` }}
+                                  transition={{ duration: 1, ease: "easeOut" }}
+                                  viewport={{ once: true }}
+                                />
+                              </div>
+                              <span className="text-xs text-muted-foreground">
+                                {item.rating}%
+                              </span>
+                            </div>
+                          </TableCell>
+                          <TableCell className="text-right">
+                            <Badge variant="secondary">{item.experience}</Badge>
+                          </TableCell>
+                        </TableRow>
+                      );
+                    })}
                   </TableBody>
                 </Table>
               </div>

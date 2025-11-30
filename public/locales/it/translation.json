@@ -63,73 +63,244 @@
       {
         "name": "Sviluppo Front-End",
         "items": [
-          { "name": "HTML5", "rating": 100, "experience": "13+ anni" },
+          {
+            "name": "HTML5",
+            "rating": 100,
+            "experience": "13+ anni",
+            "icon": "SiHtml5"
+          },
           {
             "name": "CSS3, SCSS, LESS",
             "rating": 100,
-            "experience": "13+ anni"
+            "experience": "13+ anni",
+            "icon": "SiCss3"
           },
-          { "name": "JavaScript", "rating": 100, "experience": "13+ anni" },
-          { "name": "React JS", "rating": 100, "experience": "8+ anni" },
-          { "name": "Next.js", "rating": 100, "experience": "5+ anni" },
-          { "name": "Vue.js", "rating": 100, "experience": "6+ anni" },
+          {
+            "name": "JavaScript",
+            "rating": 100,
+            "experience": "13+ anni",
+            "icon": "SiJavascript"
+          },
+          {
+            "name": "React JS",
+            "rating": 100,
+            "experience": "8+ anni",
+            "icon": "SiReact"
+          },
+          {
+            "name": "Next.js",
+            "rating": 100,
+            "experience": "5+ anni",
+            "icon": "SiNextdotjs"
+          },
+          {
+            "name": "Vue.js",
+            "rating": 100,
+            "experience": "6+ anni",
+            "icon": "SiVuedotjs"
+          },
           { "name": "Twig", "rating": 100, "experience": "5+ anni" },
-          { "name": "jQuery", "rating": 100, "experience": "8+ anni" },
-          { "name": "Storybook", "rating": 100, "experience": "5+ anni" },
-          { "name": "Material UI", "rating": 100, "experience": "4+ anni" },
+          {
+            "name": "jQuery",
+            "rating": 100,
+            "experience": "8+ anni",
+            "icon": "SiJquery"
+          },
+          {
+            "name": "Storybook",
+            "rating": 100,
+            "experience": "5+ anni",
+            "icon": "SiStorybook"
+          },
+          {
+            "name": "Material UI",
+            "rating": 100,
+            "experience": "4+ anni",
+            "icon": "SiMui"
+          },
           {
             "name": "Styled Components",
             "rating": 100,
-            "experience": "5+ anni"
+            "experience": "5+ anni",
+            "icon": "SiStyledcomponents"
           },
-          { "name": "Tailwind CSS", "rating": 80, "experience": "4+ anni" },
-          { "name": "Vite", "rating": 100, "experience": "4+ anni" },
-          { "name": "Bootstrap", "rating": 100, "experience": "9+ anni" },
+          {
+            "name": "Tailwind CSS",
+            "rating": 80,
+            "experience": "4+ anni",
+            "icon": "SiTailwindcss"
+          },
+          {
+            "name": "Vite",
+            "rating": 100,
+            "experience": "4+ anni",
+            "icon": "SiVite"
+          },
+          {
+            "name": "Bootstrap",
+            "rating": 100,
+            "experience": "9+ anni",
+            "icon": "SiBootstrap"
+          },
           {
             "name": "TanStack (Query, Router, Table)",
             "rating": 100,
             "experience": "4+ anni"
           },
-          { "name": "Ionic", "rating": 80, "experience": "4+ anni" }
+          {
+            "name": "Ionic",
+            "rating": 80,
+            "experience": "4+ anni",
+            "icon": "SiIonic"
+          }
         ]
       },
       {
         "name": "Sviluppo Back-End",
         "items": [
-          { "name": "Node.js", "rating": 100, "experience": "13+ anni" },
-          { "name": "NestJS", "rating": 80, "experience": "5+ anni" },
-          { "name": "Express", "rating": 100, "experience": "7+ anni" },
-          { "name": "PHP", "rating": 80, "experience": "7+ anni" },
-          { "name": "Python", "rating": 60, "experience": "5+ anni" },
-          { "name": "Go", "rating": 40, "experience": "1+ anno" },
-          { "name": "Java/Kotlin", "rating": 80, "experience": "6+ anni" },
-          { "name": "GraphQL & Hasura", "rating": 80, "experience": "2+ anni" },
-          { "name": "Swagger/OpenAPI", "rating": 100, "experience": "5+ anni" }
+          {
+            "name": "Node.js",
+            "rating": 100,
+            "experience": "13+ anni",
+            "icon": "SiNodedotjs"
+          },
+          {
+            "name": "NestJS",
+            "rating": 80,
+            "experience": "5+ anni",
+            "icon": "SiNestjs"
+          },
+          {
+            "name": "Express",
+            "rating": 100,
+            "experience": "7+ anni",
+            "icon": "SiNodedotjs"
+          },
+          {
+            "name": "PHP",
+            "rating": 80,
+            "experience": "7+ anni",
+            "icon": "SiPhp"
+          },
+          {
+            "name": "Python",
+            "rating": 60,
+            "experience": "5+ anni",
+            "icon": "SiPython"
+          },
+          {
+            "name": "Go",
+            "rating": 40,
+            "experience": "1+ anno",
+            "icon": "SiGo"
+          },
+          {
+            "name": "Java/Kotlin",
+            "rating": 80,
+            "experience": "6+ anni",
+            "icon": "FaJava"
+          },
+          {
+            "name": "GraphQL & Hasura",
+            "rating": 80,
+            "experience": "2+ anni",
+            "icon": "SiGraphql"
+          },
+          {
+            "name": "Swagger/OpenAPI",
+            "rating": 100,
+            "experience": "5+ anni",
+            "icon": "SiSwagger"
+          }
         ]
       },
       {
         "name": "Database & ORM",
         "items": [
-          { "name": "PostgreSQL", "rating": 80, "experience": "8+ anni" },
-          { "name": "MySQL", "rating": 100, "experience": "10+ anni" },
-          { "name": "MongoDB", "rating": 80, "experience": "5+ anni" },
-          { "name": "Prisma", "rating": 60, "experience": "2+ anni" },
-          { "name": "Mongoose", "rating": 60, "experience": "5+ anni" }
+          {
+            "name": "PostgreSQL",
+            "rating": 80,
+            "experience": "8+ anni",
+            "icon": "SiPostgresql"
+          },
+          {
+            "name": "MySQL",
+            "rating": 100,
+            "experience": "10+ anni",
+            "icon": "SiMysql"
+          },
+          {
+            "name": "MongoDB",
+            "rating": 80,
+            "experience": "5+ anni",
+            "icon": "SiMongodb"
+          },
+          {
+            "name": "Prisma",
+            "rating": 60,
+            "experience": "2+ anni",
+            "icon": "SiPrisma"
+          },
+          {
+            "name": "Mongoose",
+            "rating": 60,
+            "experience": "5+ anni",
+            "icon": "SiMongodb"
+          }
         ]
       },
       {
         "name": "DevOps & Infrastruttura Cloud",
         "items": [
-          { "name": "Docker", "rating": 80, "experience": "8+ anni" },
-          { "name": "Kubernetes", "rating": 80, "experience": "5+ anni" },
+          {
+            "name": "Docker",
+            "rating": 80,
+            "experience": "8+ anni",
+            "icon": "SiDocker"
+          },
+          {
+            "name": "Kubernetes",
+            "rating": 80,
+            "experience": "5+ anni",
+            "icon": "SiKubernetes"
+          },
           { "name": "ArgoCD", "rating": 60, "experience": "2+ anni" },
-          { "name": "Terraform", "rating": 60, "experience": "2+ anni" },
-          { "name": "Azure", "rating": 80, "experience": "5+ anni" },
-          { "name": "AWS", "rating": 60, "experience": "3+ anni" },
-          { "name": "Google Cloud", "rating": 80, "experience": "3+ anni" },
-          { "name": "DigitalOcean", "rating": 80, "experience": "5+ anni" },
-          { "name": "Heroku", "rating": 60, "experience": "1+ anno" },
-          { "name": "Fleek.co", "rating": 40, "experience": "1+ anno" }
+          {
+            "name": "Terraform",
+            "rating": 60,
+            "experience": "2+ anni",
+            "icon": "SiTerraform"
+          },
+          {
+            "name": "Azure",
+            "rating": 80,
+            "experience": "5+ anni",
+            "icon": "VscAzure"
+          },
+          {
+            "name": "AWS",
+            "rating": 60,
+            "experience": "3+ anni",
+            "icon": "SiAmazon"
+          },
+          {
+            "name": "Google Cloud",
+            "rating": 80,
+            "experience": "3+ anni",
+            "icon": "SiGooglecloud"
+          },
+          {
+            "name": "DigitalOcean",
+            "rating": 80,
+            "experience": "5+ anni",
+            "icon": "FaDigitalOcean"
+          },
+          {
+            "name": "Heroku",
+            "rating": 60,
+            "experience": "1+ anno",
+            "icon": "SiHeroku"
+          }
         ]
       },
       {
@@ -138,41 +309,127 @@
           {
             "name": "Apache HTTP Server",
             "rating": 80,
-            "experience": "13+ anni"
+            "experience": "13+ anni",
+            "icon": "SiApache"
           },
-          { "name": "NGINX", "rating": 80, "experience": "8+ anni" }
+          {
+            "name": "NGINX",
+            "rating": 80,
+            "experience": "8+ anni",
+            "icon": "SiNginx"
+          }
         ]
       },
       {
         "name": "Piattaforme CMS & E-Commerce",
         "items": [
-          { "name": "Shopify", "rating": 60, "experience": "1+ anno" },
-          { "name": "Storeden", "rating": 80, "experience": "8+ anni" },
-          { "name": "WordPress", "rating": 80, "experience": "10+ anni" },
-          { "name": "WooCommerce", "rating": 80, "experience": "8+ anni" },
-          { "name": "Magento", "rating": 60, "experience": "1+ anno" },
+          {
+            "name": "Shopify",
+            "rating": 60,
+            "experience": "1+ anno",
+            "icon": "SiShopify"
+          },
+          {
+            "name": "Storeden",
+            "rating": 80,
+            "experience": "8+ anni",
+            "icon": "FaStore"
+          },
+          {
+            "name": "WordPress",
+            "rating": 80,
+            "experience": "10+ anni",
+            "icon": "SiWordpress"
+          },
+          {
+            "name": "WooCommerce",
+            "rating": 80,
+            "experience": "8+ anni",
+            "icon": "SiWoocommerce"
+          },
+          {
+            "name": "Magento",
+            "rating": 60,
+            "experience": "1+ anno",
+            "icon": "SiMagento"
+          },
           { "name": "Swell", "rating": 60, "experience": "2+ anni" }
         ]
       },
       {
         "name": "Strumenti di Design & Creatività",
         "items": [
-          { "name": "Figma", "rating": 80, "experience": "5+ anni" },
-          { "name": "Photoshop", "rating": 100, "experience": "10+ anni" },
-          { "name": "Illustrator", "rating": 80, "experience": "8+ anni" },
-          { "name": "Canva", "rating": 60, "experience": "2+ anni" },
-          { "name": "Abstract", "rating": 60, "experience": "2+ anni" }
+          {
+            "name": "Figma",
+            "rating": 80,
+            "experience": "5+ anni",
+            "icon": "SiFigma"
+          },
+          {
+            "name": "Photoshop",
+            "rating": 100,
+            "experience": "10+ anni",
+            "icon": "SiAdobephotoshop"
+          },
+          {
+            "name": "Illustrator",
+            "rating": 80,
+            "experience": "8+ anni",
+            "icon": "SiAdobeillustrator"
+          },
+          {
+            "name": "Canva",
+            "rating": 60,
+            "experience": "2+ anni",
+            "icon": "SiCanva"
+          },
+          {
+            "name": "Abstract",
+            "rating": 60,
+            "experience": "2+ anni",
+            "icon": "SiAbstract"
+          }
         ]
       },
       {
         "name": "Gestori di Pacchetti & Build Tools",
         "items": [
-          { "name": "npm", "rating": 100, "experience": "7+ anni" },
-          { "name": "Yarn", "rating": 80, "experience": "4+ anni" },
-          { "name": "Maven", "rating": 80, "experience": "5+ anni" },
-          { "name": "Cargo", "rating": 60, "experience": "1+ anno" },
-          { "name": "Bun", "rating": 40, "experience": "1+ anno" },
-          { "name": "PIP", "rating": 60, "experience": "5+ anni" }
+          {
+            "name": "npm",
+            "rating": 100,
+            "experience": "7+ anni",
+            "icon": "SiNpm"
+          },
+          {
+            "name": "Yarn",
+            "rating": 80,
+            "experience": "4+ anni",
+            "icon": "SiYarn"
+          },
+          {
+            "name": "Maven",
+            "rating": 80,
+            "experience": "5+ anni",
+            "icon": "SiApachemaven"
+          },
+          {
+            "name": "Cargo",
+            "rating": 60,
+            "experience": "1+ anno",
+            "icon": "SiRust"
+          },
+          {
+            "name": "Bun",
+            "rating": 40,
+            "experience": "1+ anno",
+            "icon": "SiBun"
+          },
+          {
+            "name": "PIP",
+            "rating": 60,
+            "experience": "5+ anni",
+            "icon": "SiPypi"
+          }
         ]
       },
       {
@@ -181,35 +438,121 @@
           {
             "name": "Visual Studio Code",
             "rating": 100,
-            "experience": "9+ anni"
+            "experience": "9+ anni",
+            "icon": "VscVscode"
           },
-          { "name": "WebStorm", "rating": 80, "experience": "5+ anni" },
-          { "name": "IntelliJ IDEA", "rating": 80, "experience": "4+ anni" },
-          { "name": "Postman", "rating": 80, "experience": "6+ anni" },
-          { "name": "Open Lens", "rating": 80, "experience": "4+ anni" }
+          {
+            "name": "WebStorm",
+            "rating": 80,
+            "experience": "5+ anni",
+            "icon": "SiWebstorm"
+          },
+          {
+            "name": "IntelliJ IDEA",
+            "rating": 80,
+            "experience": "4+ anni",
+            "icon": "SiIntellijidea"
+          },
+          {
+            "name": "Postman",
+            "rating": 80,
+            "experience": "6+ anni",
+            "icon": "SiPostman"
+          },
+          {
+            "name": "Open Lens",
+            "rating": 80,
+            "experience": "4+ anni",
+            "icon": "SiLens"
+          }
         ]
       },
       {
         "name": "Project Management & Collaborazione",
         "items": [
-          { "name": "Jira", "rating": 80, "experience": "4+ anni" },
-          { "name": "Trello", "rating": 80, "experience": "6+ anni" },
-          { "name": "GitLab", "rating": 80, "experience": "5+ anni" },
-          { "name": "GitHub", "rating": 100, "experience": "8+ anni" },
-          { "name": "Microsoft Teams", "rating": 80, "experience": "7+ anni" },
-          { "name": "Slack", "rating": 80, "experience": "5+ anni" },
-          { "name": "Discord", "rating": 80, "experience": "4+ anni" }
+          {
+            "name": "Jira",
+            "rating": 80,
+            "experience": "4+ anni",
+            "icon": "SiJira"
+          },
+          {
+            "name": "Trello",
+            "rating": 80,
+            "experience": "6+ anni",
+            "icon": "SiTrello"
+          },
+          {
+            "name": "GitLab",
+            "rating": 80,
+            "experience": "5+ anni",
+            "icon": "SiGitlab"
+          },
+          {
+            "name": "GitHub",
+            "rating": 100,
+            "experience": "8+ anni",
+            "icon": "SiGithub"
+          },
+          {
+            "name": "Microsoft Teams",
+            "rating": 80,
+            "experience": "7+ anni",
+            "icon": "BsMicrosoftTeams"
+          },
+          {
+            "name": "Slack",
+            "rating": 80,
+            "experience": "5+ anni",
+            "icon": "SiSlack"
+          },
+          {
+            "name": "Discord",
+            "rating": 80,
+            "experience": "4+ anni",
+            "icon": "SiDiscord"
+          }
         ]
       },
       {
         "name": "Sistemi Operativi",
         "items": [
-          { "name": "Ubuntu", "rating": 100, "experience": "12+ anni" },
-          { "name": "macOS", "rating": 100, "experience": "10+ anni" },
-          { "name": "Debian", "rating": 100, "experience": "8+ anni" },
-          { "name": "Windows", "rating": 100, "experience": "20+ anni" },
-          { "name": "Manjaro", "rating": 80, "experience": "8+ anni" },
-          { "name": "WSL", "rating": 100, "experience": "4+ anni" }
+          {
+            "name": "Ubuntu",
+            "rating": 100,
+            "experience": "12+ anni",
+            "icon": "SiUbuntu"
+          },
+          {
+            "name": "macOS",
+            "rating": 100,
+            "experience": "10+ anni",
+            "icon": "SiMacos"
+          },
+          {
+            "name": "Debian",
+            "rating": 100,
+            "experience": "8+ anni",
+            "icon": "SiDebian"
+          },
+          {
+            "name": "Windows",
+            "rating": 100,
+            "experience": "20+ anni",
+            "icon": "FaMicrosoftWindows"
+          },
+          {
+            "name": "Manjaro",
+            "rating": 80,
+            "experience": "8+ anni",
+            "icon": "SiManjaro"
+          },
+          {
+            "name": "WSL",
+            "rating": 100,
+            "experience": "4+ anni",
+            "icon": "SiLinux"
+          }
         ]
       },
       {
@@ -218,16 +561,28 @@
           {
             "name": "Google Analytics",
             "rating": 100,
-            "experience": "10+ anni"
+            "experience": "10+ anni",
+            "icon": "SiGoogleanalytics"
           },
           {
             "name": "Google Tag Manager",
             "rating": 100,
-            "experience": "10+ anni"
+            "experience": "10+ anni",
+            "icon": "SiGoogletagmanager"
           },
-          { "name": "Facebook Pixel", "rating": 80, "experience": "8+ anni" },
+          {
+            "name": "Facebook Pixel",
+            "rating": 80,
+            "experience": "8+ anni",
+            "icon": "SiFacebook"
+          },
           { "name": "Klaviyo", "rating": 60, "experience": "2+ anni" },
-          { "name": "Mailchimp", "rating": 60, "experience": "5+ anni" },
+          {
+            "name": "Mailchimp",
+            "rating": 60,
+            "experience": "5+ anni",
+            "icon": "SiMailchimp"
+          },
           { "name": "ActiveCampaign", "rating": 80, "experience": "2+ anni" },
           { "name": "Tidio", "rating": 80, "experience": "2+ anni" }
         ]
@@ -235,29 +590,72 @@
       {
         "name": "Produttività & Strumenti Office",
         "items": [
-          { "name": "Microsoft Word", "rating": 100, "experience": "15+ anni" },
+          {
+            "name": "Microsoft Word",
+            "rating": 100,
+            "experience": "15+ anni",
+            "icon": "FaMicrosoft"
+          },
           {
             "name": "Microsoft Excel",
             "rating": 100,
-            "experience": "15+ anni"
+            "experience": "15+ anni",
+            "icon": "FaMicrosoft"
           },
           {
             "name": "Microsoft PowerPoint",
             "rating": 80,
-            "experience": "15+ anni"
+            "experience": "15+ anni",
+            "icon": "FaMicrosoft"
           },
           {
             "name": "Microsoft Outlook",
             "rating": 80,
-            "experience": "8+ anni"
+            "experience": "8+ anni",
+            "icon": "FaMicrosoft"
           },
-          { "name": "Google Sheets", "rating": 80, "experience": "5+ anni" },
-          { "name": "Google Docs", "rating": 80, "experience": "5+ anni" },
-          { "name": "Google Drive", "rating": 80, "experience": "5+ anni" },
-          { "name": "Google Calendar", "rating": 80, "experience": "5+ anni" },
-          { "name": "Notion", "rating": 60, "experience": "5+ anni" },
-          { "name": "Dropbox", "rating": 80, "experience": "5+ anni" },
-          { "name": "Thunderbird", "rating": 80, "experience": "5+ anni" }
+          {
+            "name": "Google Sheets",
+            "rating": 80,
+            "experience": "5+ anni",
+            "icon": "SiGooglesheets"
+          },
+          {
+            "name": "Google Docs",
+            "rating": 80,
+            "experience": "5+ anni",
+            "icon": "SiGoogledocs"
+          },
+          {
+            "name": "Google Drive",
+            "rating": 80,
+            "experience": "5+ anni",
+            "icon": "SiGoogledrive"
+          },
+          {
+            "name": "Google Calendar",
+            "rating": 80,
+            "experience": "5+ anni",
+            "icon": "SiGooglecalendar"
+          },
+          {
+            "name": "Notion",
+            "rating": 60,
+            "experience": "5+ anni",
+            "icon": "SiNotion"
+          },
+          {
+            "name": "Dropbox",
+            "rating": 80,
+            "experience": "5+ anni",
+            "icon": "SiDropbox"
+          },
+          {
+            "name": "Thunderbird",
+            "rating": 80,
+            "experience": "5+ anni",
+            "icon": "SiThunderbird"
+          }
         ]
       }
     ]
