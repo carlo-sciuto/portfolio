@@ -10,7 +10,6 @@
     "test": "vitest",
     "test:e2e": "playwright test",
     "preview": "vite preview",
-    "test": "vitest",
     "predeploy": "bun run build",
     "deploy": "gh-pages -d dist"
   },

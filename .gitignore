@@ -13,7 +13,7 @@ dist-ssr
 *.local
 
 # Editor directories and files
-.info
+.info/
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -29,3 +29,8 @@ package-lock.json
 yarn.lock
 pnpm-lock.yaml
 bun.lock
+
+# Test results
+test-results/
+playwright-report/
+coverage/
