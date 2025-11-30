@@ -1,0 +1,271 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "toggle_theme": "Cambiar tema",
+  "hero": {
+    "title": "Carlo Sciuto",
+    "role": "Senior Full Stack Developer",
+    "bio": "Como profesional de informática y desarrollo web altamente motivado, tengo más de una década de experiencia creando sitios web y aplicaciones atractivos y fáciles de usar."
+  },
+  "about": {
+    "title": "Biografía",
+    "sections": [
+      {
+        "title": "2010-2016",
+        "content": "Como profesional de informática y desarrollo web altamente motivado, tengo más de una década de experiencia creando sitios web y aplicaciones atractivos y fáciles de usar. Mi carrera comenzó en 2010, donde aprendí por mi cuenta los conceptos básicos de HTML, CSS y JavaScript, y rápidamente me apasioné por el desarrollo front-end, perfeccionando mis habilidades en diseño gráfico y creación de UI usando Photoshop e Illustrator CS4. Continué expandiendo mis conocimientos y habilidades, sumergiéndome en las últimas tecnologías web como HTML5 y CSS3, y aprendiendo los conceptos básicos de programación con PHP y gestión de bases de datos MySQL. He construido con éxito sitios web y aplicaciones web personalizadas para una diversa gama de clientes, incluidos profesionales como ingenieros y médicos, así como empresas en industrias como el fitness y la hostelería. Con pasión por crear soluciones únicas y efectivas, me esfuerzo por evitar el uso de plantillas de terceros, optando en su lugar por construir todo desde cero para asegurar una experiencia verdaderamente personalizada para mis clientes. Mi amor por el desarrollo web me ha impulsado a convertirlo en mi carrera, y espero continuar aprendiendo y creciendo en este campo."
+      },
+      {
+        "title": "2016-2025",
+        "content": "Además de mi sólida base en desarrollo web, también me especializo en varias tecnologías y herramientas modernas. Soy competente en Node.js, un entorno de ejecución de JavaScript que me permite construir aplicaciones del lado del servidor de alto rendimiento y escalables. Destaco en React, una biblioteca de JavaScript popular para construir interfaces de usuario, así como bibliotecas que se pueden usar dentro del contexto de React como Redux, React Query, React Hook Forms. También uso diferentes soluciones para el backend como Kotlin/Java o Hasura con lenguaje GraphQL además de base de datos PostgreSQL con funciones PG SQL para introducir lógicas de negocio. También tengo experiencia con tecnologías y servicios basados en la nube como Kubernetes, Docker para orquestación y despliegue de contenedores. También estoy familiarizado con Figma para diseño UI/UX, y tengo experiencia con plataformas en la nube como Google Cloud, DigitalOcean, Azure para alojamiento y escalado de aplicaciones web. Además, soy experto en metodologías y prácticas DevOps, lo que me permite automatizar y optimizar todo el proceso de desarrollo y despliegue de software con pipelines, asegurando que las aplicaciones se entreguen más rápido con pruebas superadas y de manera más eficiente."
+      },
+      {
+        "title": "2025 - Futuro",
+        "content": "Mi objetivo final como profesional es convertirme en un experto altamente calificado y certificado en mi campo, con un fuerte enfoque en innovación, optimización y automatización. Me esfuerzo por utilizar mis habilidades naturales de resolución de problemas, mentalidad dinámica y deseo continuo de aprender y crecer para mejorar continuamente plataformas complejas y procesos comerciales. Estoy dedicado a mantenerme a la vanguardia de mi campo y utilizar las últimas tecnologías y técnicas para impulsar el éxito de mis clientes y empleadores. Estoy entusiasmado con el futuro y la oportunidad de aplicar mis habilidades y conocimientos en entornos nuevos y desafiantes. Me veo en un rol de liderazgo, asesorando y guiando a otros desarrolladores con menos experiencia para alcanzar su máximo potencial."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "items": [
+      {
+        "role": "Desarrollador de Software",
+        "company": "TeamSystem SPA",
+        "period": "2022 - Actualidad",
+        "description": "React: Software de Aplicación Front-End, Gestión de librería de componentes con Storybook y MaterialUI, Software principal incluye Vite, Tanstack React Query, Tanstack Form. Gitlab: Versionado de Software y CI/CD. Monitoreo y Pruebas: Elastic, APM, Kibana, pruebas de carga K6 para la parte Backend, en cambio para el Frontend Vitest y Jest. Backend: Docker, Java/Kotlin, PostgresSQL, Hasura, Graphql, patrón CQRS, NodeJS Express, Swagger. DevOps: Kubernetes, Terraform, ArgoCD, Azure. Scrum: Atlassian / Jyra para organización de trabajo remoto, tareas y roadmap, Teams para ceremonias y chat"
+      },
+      {
+        "role": "Desarrollador FullStack y Diseñador Web",
+        "company": "Freelance",
+        "period": "2015 - 2022",
+        "description": "Desarrollo web - UX/UI (PS-Figma), Frontend (Angular, React, Redux, Styled Components, MaterialUI y muchos otros paquetes), Backend (Hasura GraphQL, NodeJS Express, MongoDb, PostgreSQL). Despliegue en Servicios en la Nube como Google Cloud, Azure, Aws, Digital Ocean. Creación de E-commerce vía CMS: Shopify, Storeden, Woocommerce, Magento. Integraciones con cualquier tipo de apps de terceros como Whatsapp, Tidio, Notion"
+      },
+      {
+        "role": "Web Master - Especialista E-commerce - Desarrollador de Software",
+        "company": "GastroCentrale SRL",
+        "period": "2020 - 2022",
+        "description": "Integraciones no nativas en Storeden realizadas vía NodeJS, Docker, Google Cloud Run o Function / Appscript para integrar las siguientes plataformas: Klaviyo, Mailchimp, Activecampaign, Tidio, Google Analytics, Google tag manager, Facebook pixel. Automatización de procesos de negocio, gestión automática de pedidos, notificación a logística para envíos vía app dedicada, detección de problemas de pago y reporte en caso de pago fraudulento. Optimización de comunicaciones de estado de pedido al cliente a través de Whatsapp API. Gestión de tema de sitio web usando motor de plantillas Twig, marcado HTML5, CSS3, y scripting en JavaScript ES 6-10. DEM, Newsletter y Marketing ADS con creación gráfica/video creativa relacionada, a través de PS y AI CC, Figma o Canva"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Matriz de Habilidades",
+    "headers": {
+      "technology": "Tecnología",
+      "proficiency": "Competencia",
+      "experience": "Experiencia"
+    },
+    "categories": [
+      {
+        "name": "Desarrollo Front-End",
+        "items": [
+          { "name": "HTML5", "rating": 100, "experience": "13+ años" },
+          {
+            "name": "CSS3, SCSS, LESS",
+            "rating": 100,
+            "experience": "13+ años"
+          },
+          { "name": "JavaScript", "rating": 100, "experience": "13+ años" },
+          { "name": "React JS", "rating": 100, "experience": "8+ años" },
+          { "name": "Next.js", "rating": 100, "experience": "5+ años" },
+          { "name": "Vue.js", "rating": 100, "experience": "6+ años" },
+          { "name": "Twig", "rating": 100, "experience": "5+ años" },
+          { "name": "jQuery", "rating": 100, "experience": "8+ años" },
+          { "name": "Storybook", "rating": 100, "experience": "5+ años" },
+          { "name": "Material UI", "rating": 100, "experience": "4+ años" },
+          {
+            "name": "Styled Components",
+            "rating": 100,
+            "experience": "5+ años"
+          },
+          { "name": "Tailwind CSS", "rating": 80, "experience": "4+ años" },
+          { "name": "Vite", "rating": 100, "experience": "4+ años" },
+          { "name": "Bootstrap", "rating": 100, "experience": "9+ años" },
+          {
+            "name": "TanStack (Query, Router, Table)",
+            "rating": 100,
+            "experience": "4+ años"
+          },
+          { "name": "Ionic", "rating": 80, "experience": "4+ años" }
+        ]
+      },
+      {
+        "name": "Desarrollo Back-End",
+        "items": [
+          { "name": "Node.js", "rating": 100, "experience": "13+ años" },
+          { "name": "NestJS", "rating": 80, "experience": "5+ años" },
+          { "name": "Express", "rating": 100, "experience": "7+ años" },
+          { "name": "PHP", "rating": 80, "experience": "7+ años" },
+          { "name": "Python", "rating": 60, "experience": "5+ años" },
+          { "name": "Go", "rating": 40, "experience": "1+ año" },
+          { "name": "Java/Kotlin", "rating": 80, "experience": "6+ años" },
+          { "name": "GraphQL & Hasura", "rating": 80, "experience": "2+ años" },
+          { "name": "Swagger/OpenAPI", "rating": 100, "experience": "5+ años" }
+        ]
+      },
+      {
+        "name": "Bases de datos y ORM",
+        "items": [
+          { "name": "PostgreSQL", "rating": 80, "experience": "8+ años" },
+          { "name": "MySQL", "rating": 100, "experience": "10+ años" },
+          { "name": "MongoDB", "rating": 80, "experience": "5+ años" },
+          { "name": "Prisma", "rating": 60, "experience": "2+ años" },
+          { "name": "Mongoose", "rating": 60, "experience": "5+ años" }
+        ]
+      },
+      {
+        "name": "DevOps e Infraestructura en la Nube",
+        "items": [
+          { "name": "Docker", "rating": 80, "experience": "8+ años" },
+          { "name": "Kubernetes", "rating": 80, "experience": "5+ años" },
+          { "name": "ArgoCD", "rating": 60, "experience": "2+ años" },
+          { "name": "Terraform", "rating": 60, "experience": "2+ años" },
+          { "name": "Azure", "rating": 80, "experience": "5+ años" },
+          { "name": "AWS", "rating": 60, "experience": "3+ años" },
+          { "name": "Google Cloud", "rating": 80, "experience": "3+ años" },
+          { "name": "DigitalOcean", "rating": 80, "experience": "5+ años" },
+          { "name": "Heroku", "rating": 60, "experience": "1+ año" },
+          { "name": "Fleek.co", "rating": 40, "experience": "1+ año" }
+        ]
+      },
+      {
+        "name": "Servidores Web e Infraestructura",
+        "items": [
+          {
+            "name": "Apache HTTP Server",
+            "rating": 80,
+            "experience": "13+ años"
+          },
+          { "name": "NGINX", "rating": 80, "experience": "8+ años" }
+        ]
+      },
+      {
+        "name": "Plataformas CMS y E-Commerce",
+        "items": [
+          { "name": "Shopify", "rating": 60, "experience": "1+ año" },
+          { "name": "Storeden", "rating": 80, "experience": "8+ años" },
+          { "name": "WordPress", "rating": 80, "experience": "10+ años" },
+          { "name": "WooCommerce", "rating": 80, "experience": "8+ años" },
+          { "name": "Magento", "rating": 60, "experience": "1+ año" },
+          { "name": "Swell", "rating": 60, "experience": "2+ años" }
+        ]
+      },
+      {
+        "name": "Herramientas de Diseño y Creatividad",
+        "items": [
+          { "name": "Figma", "rating": 80, "experience": "5+ años" },
+          { "name": "Photoshop", "rating": 100, "experience": "10+ años" },
+          { "name": "Illustrator", "rating": 80, "experience": "8+ años" },
+          { "name": "Canva", "rating": 60, "experience": "2+ años" },
+          { "name": "Abstract", "rating": 60, "experience": "2+ años" }
+        ]
+      },
+      {
+        "name": "Gestores de Paquetes y Herramientas de Construcción",
+        "items": [
+          { "name": "npm", "rating": 100, "experience": "7+ años" },
+          { "name": "Yarn", "rating": 80, "experience": "4+ años" },
+          { "name": "Maven", "rating": 80, "experience": "5+ años" },
+          { "name": "Cargo", "rating": 60, "experience": "1+ año" },
+          { "name": "Bun", "rating": 40, "experience": "1+ año" },
+          { "name": "PIP", "rating": 60, "experience": "5+ años" }
+        ]
+      },
+      {
+        "name": "Herramientas de Desarrollo e IDEs",
+        "items": [
+          {
+            "name": "Visual Studio Code",
+            "rating": 100,
+            "experience": "9+ años"
+          },
+          { "name": "WebStorm", "rating": 80, "experience": "5+ años" },
+          { "name": "IntelliJ IDEA", "rating": 80, "experience": "4+ años" },
+          { "name": "Postman", "rating": 80, "experience": "6+ años" },
+          { "name": "Open Lens", "rating": 80, "experience": "4+ años" }
+        ]
+      },
+      {
+        "name": "Gestión de Proyectos y Colaboración",
+        "items": [
+          { "name": "Jira", "rating": 80, "experience": "4+ años" },
+          { "name": "Trello", "rating": 80, "experience": "6+ años" },
+          { "name": "GitLab", "rating": 80, "experience": "5+ años" },
+          { "name": "GitHub", "rating": 100, "experience": "8+ años" },
+          { "name": "Microsoft Teams", "rating": 80, "experience": "7+ años" },
+          { "name": "Slack", "rating": 80, "experience": "5+ años" },
+          { "name": "Discord", "rating": 80, "experience": "4+ años" }
+        ]
+      },
+      {
+        "name": "Sistemas Operativos",
+        "items": [
+          { "name": "Ubuntu", "rating": 100, "experience": "12+ años" },
+          { "name": "macOS", "rating": 100, "experience": "10+ años" },
+          { "name": "Debian", "rating": 100, "experience": "8+ años" },
+          { "name": "Windows", "rating": 100, "experience": "20+ años" },
+          { "name": "Manjaro", "rating": 80, "experience": "8+ años" },
+          { "name": "WSL", "rating": 100, "experience": "4+ años" }
+        ]
+      },
+      {
+        "name": "Analítica e Integraciones de Marketing",
+        "items": [
+          {
+            "name": "Google Analytics",
+            "rating": 100,
+            "experience": "10+ años"
+          },
+          {
+            "name": "Google Tag Manager",
+            "rating": 100,
+            "experience": "10+ años"
+          },
+          { "name": "Facebook Pixel", "rating": 80, "experience": "8+ años" },
+          { "name": "Klaviyo", "rating": 60, "experience": "2+ años" },
+          { "name": "Mailchimp", "rating": 60, "experience": "5+ años" },
+          { "name": "ActiveCampaign", "rating": 80, "experience": "2+ años" },
+          { "name": "Tidio", "rating": 80, "experience": "2+ años" }
+        ]
+      },
+      {
+        "name": "Productividad y Herramientas de Oficina",
+        "items": [
+          { "name": "Microsoft Word", "rating": 100, "experience": "15+ años" },
+          {
+            "name": "Microsoft Excel",
+            "rating": 100,
+            "experience": "15+ años"
+          },
+          {
+            "name": "Microsoft PowerPoint",
+            "rating": 80,
+            "experience": "15+ años"
+          },
+          {
+            "name": "Microsoft Outlook",
+            "rating": 80,
+            "experience": "8+ años"
+          },
+          { "name": "Google Sheets", "rating": 80, "experience": "5+ años" },
+          { "name": "Google Docs", "rating": 80, "experience": "5+ años" },
+          { "name": "Google Drive", "rating": 80, "experience": "5+ años" },
+          { "name": "Google Calendar", "rating": 80, "experience": "5+ años" },
+          { "name": "Notion", "rating": 60, "experience": "5+ años" },
+          { "name": "Dropbox", "rating": 80, "experience": "5+ años" },
+          { "name": "Thunderbird", "rating": 80, "experience": "5+ años" }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contáctame",
+    "email": "Envíame un correo",
+    "linkedin": "Perfil de LinkedIn",
+    "github": "Perfil de GitHub"
+  }
+}
