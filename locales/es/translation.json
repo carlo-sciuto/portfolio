@@ -594,25 +594,25 @@
             "name": "Microsoft Word",
             "rating": 100,
             "experience": "15+ años",
-            "icon": "FaMicrosoft"
+            "icon": "FaFileWord"
           },
           {
             "name": "Microsoft Excel",
             "rating": 100,
             "experience": "15+ años",
-            "icon": "FaMicrosoft"
+            "icon": "FaFileExcel"
           },
           {
             "name": "Microsoft PowerPoint",
             "rating": 80,
             "experience": "15+ años",
-            "icon": "FaMicrosoft"
+            "icon": "FaFilePowerPoint"
           },
           {
             "name": "Microsoft Outlook",
             "rating": 80,
             "experience": "8+ años",
-            "icon": "FaMicrosoft"
+            "icon": "PiMicrosoftOutlookLogoFill"
           },
           {
             "name": "Google Sheets",
