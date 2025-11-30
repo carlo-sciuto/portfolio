@@ -90,9 +90,10 @@ import {
   SiPrisma,
   SiTerraform,
 } from "react-icons/si";
-import { FaJava, FaMicrosoft, FaStore, FaDigitalOcean } from "react-icons/fa";
+import { FaJava, FaMicrosoft, FaStore, FaDigitalOcean, FaFileWord, FaFileExcel, FaFilePowerpoint } from "react-icons/fa";
 import { VscAzure, VscVscode } from "react-icons/vsc";
 import { BsMicrosoftTeams } from "react-icons/bs";
+import { PiMicrosoftOutlookLogoFill } from "react-icons/pi";
 import { Code2 } from "lucide-react";
 
 export const skillIcons = {
@@ -194,6 +195,10 @@ export const skillIcons = {
   SiLinux: { icon: SiLinux, color: "currentColor" },
   SiSwagger: { icon: SiSwagger, color: "#85EA2D" },
   SiPrisma: { icon: SiPrisma, color: "currentColor" },
+  FaFileWord: { icon: FaFileWord, color: "#2B579A" },
+  FaFileExcel: { icon: FaFileExcel, color: "#217346" },
+  FaFilePowerPoint: { icon: FaFilePowerpoint, color: "#D24726" },
+  PiMicrosoftOutlookLogoFill: { icon: PiMicrosoftOutlookLogoFill, color: "#0078D4" },
 };
 
 export type SkillIconName = keyof typeof skillIcons;
