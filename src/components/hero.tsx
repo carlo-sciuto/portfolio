@@ -41,22 +41,33 @@ export function Hero() {
     >
       <div className="[perspective:1000px]">
         <motion.div
-          className="relative"
+          className="relative group"
           style={{
             rotateX,
             rotateY,
             transformStyle: "preserve-3d",
           }}
         >
-          <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary to-secondary opacity-75 blur" />
-          <Avatar className="h-48 w-48 border-4 border-background relative">
-            <AvatarImage
-              src="https://github.com/carlo-sciuto.png"
-              alt="Carlo Sciuto"
-              className="object-cover"
-            />
-            <AvatarFallback>CS</AvatarFallback>
-          </Avatar>
+          <div
+            className="absolute -inset-4 rounded-full border border-primary/20"
+            style={{ transform: "translateZ(-50px)" }}
+          />
+          <div
+            className="absolute -inset-8 rounded-full border border-primary/10"
+            style={{ transform: "translateZ(-80px)" }}
+          />
+          <div style={{ transform: "translateZ(50px)" }}>
+            <Avatar className="h-48 w-48 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] dark:shadow-[0_20px_50px_rgba(255,255,255,0.1)]">
+              <AvatarImage
+                src="https://github.com/carlo-sciuto.png"
+                alt="Carlo Sciuto"
+                className="object-cover"
+              />
+              <AvatarFallback className="text-4xl bg-background">
+                CS
+              </AvatarFallback>
+            </Avatar>
+          </div>
         </motion.div>
       </div>
 

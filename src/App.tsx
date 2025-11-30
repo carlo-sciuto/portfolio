@@ -1,11 +1,11 @@
-import { ThemeProvider } from "@/components/theme-provider"
-import { Navbar } from "@/components/navbar"
-import { Hero } from "@/components/hero"
-import { About } from "@/components/about"
-import { Experience } from "@/components/experience"
-import { Skills } from "@/components/skills"
-import { Contact } from "@/components/contact"
-import { Background } from "@/components/background"
+import { ThemeProvider } from "@/components/theme-provider";
+import { Navbar } from "@/components/navbar";
+import { Hero } from "@/components/hero";
+import { About } from "@/components/about";
+import { Experience } from "@/components/experience";
+import { Skills } from "@/components/skills";
+import { Contact } from "@/components/contact";
+import { Background } from "@/components/background";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         </main>
       </div>
     </ThemeProvider>
-  )
+  );
 }
 
 export default App;
