@@ -35,9 +35,12 @@ export function Navbar() {
             <SheetContent side="left">
               <SheetTitle className="hidden">Navigation Menu</SheetTitle>
               <div className="flex flex-col space-y-4 mt-4">
-                <a className="font-bold text-lg" href="/portfolio">
+                <button
+                  onClick={() => scrollToSection("hero")}
+                  className="font-bold text-lg text-left"
+                >
                   Carlo Sciuto
-                </a>
+                </button>
                 <nav className="flex flex-col space-y-3">
                   <SheetClose asChild>
                     <button
@@ -85,16 +88,22 @@ export function Navbar() {
           </Sheet>
         </div>
         <div className="mr-4 md:hidden">
-          <a className="flex items-center space-x-2" href="/">
+          <button
+            onClick={() => scrollToSection("hero")}
+            className="flex items-center space-x-2"
+          >
             <span className="font-bold">Carlo Sciuto</span>
-          </a>
+          </button>
         </div>
         <div className="mr-4 hidden md:flex">
-          <a className="mr-6 flex items-center space-x-2" href="/">
+          <button
+            onClick={() => scrollToSection("hero")}
+            className="mr-6 flex items-center space-x-2"
+          >
             <span className="hidden font-bold sm:inline-block">
               Carlo Sciuto
             </span>
-          </a>
+          </button>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             <button
               onClick={() => scrollToSection("hero")}
