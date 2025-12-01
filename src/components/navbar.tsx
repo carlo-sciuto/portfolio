@@ -35,7 +35,7 @@ export function Navbar() {
             <SheetContent side="left">
               <SheetTitle className="hidden">Navigation Menu</SheetTitle>
               <div className="flex flex-col space-y-4 mt-4">
-                <a className="font-bold text-lg" href="/">
+                <a className="font-bold text-lg" href="/portfolio">
                   Carlo Sciuto
                 </a>
                 <nav className="flex flex-col space-y-3">

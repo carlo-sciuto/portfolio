@@ -1,43 +1,32 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useTranslation } from "react-i18next";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { motion } from "framer-motion";
+import { ArrowDown, Smartphone } from "lucide-react";
+import { use3DMotion } from "@/hooks/use3DMotion";
+import { Button } from "@/components/ui/button";
 
 export function Hero() {
   const { t } = useTranslation();
+  const {
+    rotateX,
+    rotateY,
+    handleMouseMove,
+    handleMouseLeave,
+    isMobile,
+    permissionGranted,
+    requestOrientationPermission,
+  } = use3DMotion();
 
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-
-  const mouseX = useSpring(x, { stiffness: 500, damping: 50 });
-  const mouseY = useSpring(y, { stiffness: 500, damping: 50 });
-
-  const rotateX = useTransform(mouseY, [-0.5, 0.5], ["17.5deg", "-17.5deg"]);
-  const rotateY = useTransform(mouseX, [-0.5, 0.5], ["-17.5deg", "17.5deg"]);
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const width = rect.width;
-    const height = rect.height;
-    const mouseX = e.clientX - rect.left;
-    const mouseY = e.clientY - rect.top;
-    const xPct = mouseX / width - 0.5;
-    const yPct = mouseY / height - 0.5;
-    x.set(xPct);
-    y.set(yPct);
-  };
-
-  const handleMouseLeave = () => {
-    x.set(0);
-    y.set(0);
+  const handleEnableGyroscope = async () => {
+    await requestOrientationPermission();
   };
 
   return (
     <section
       id="hero"
       className="min-h-[90vh] flex flex-col items-center justify-center text-center gap-8 py-12 relative"
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
+      onMouseMove={!isMobile ? handleMouseMove : undefined}
+      onMouseLeave={!isMobile ? handleMouseLeave : undefined}
     >
       <div className="[perspective:1000px]">
         <motion.div
@@ -84,6 +73,25 @@ export function Hero() {
           {t("hero.role")}
         </p>
         <p className="text-muted-foreground leading-relaxed">{t("hero.bio")}</p>
+
+        {isMobile && !permissionGranted && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.5 }}
+            className="pt-4"
+          >
+            <Button
+              onClick={handleEnableGyroscope}
+              variant="outline"
+              size="sm"
+              className="gap-2"
+            >
+              <Smartphone className="h-4 w-4" />
+              Enable 3D Gyroscope Effect
+            </Button>
+          </motion.div>
+        )}
       </motion.div>
 
       <motion.div

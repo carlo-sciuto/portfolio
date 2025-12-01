@@ -72,13 +72,13 @@ export function Skills() {
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead className="w-[40%]">
+                      <TableHead className="w-[35%]">
                         {t("skills.headers.technology")}
                       </TableHead>
                       <TableHead className="w-[40%]">
                         {t("skills.headers.proficiency")}
                       </TableHead>
-                      <TableHead className="w-[20%] text-right">
+                      <TableHead className="w-[25%] text-right whitespace-nowrap">
                         {t("skills.headers.experience")}
                       </TableHead>
                     </TableRow>
@@ -90,18 +90,20 @@ export function Skills() {
                       );
                       return (
                         <TableRow key={i}>
-                          <TableCell className="font-medium">
-                            <div className="flex items-center gap-2">
+                          <TableCell className="font-medium p-2 sm:p-4">
+                            <div className="flex items-center gap-1 sm:gap-2">
                               <Icon
-                                className="h-5 w-5"
+                                className="h-4 w-4 flex-shrink-0"
                                 style={{ color: color }}
                               />
-                              {item.name}
+                              <span className="text-xs sm:text-sm">
+                                {item.name}
+                              </span>
                             </div>
                           </TableCell>
-                          <TableCell>
-                            <div className="flex items-center gap-2">
-                              <div className="h-2 w-[60%] overflow-hidden rounded-full bg-primary/20">
+                          <TableCell className="p-2 sm:p-4">
+                            <div className="flex items-center gap-1 sm:gap-2">
+                              <div className="h-2 flex-1 overflow-hidden rounded-full bg-primary/20">
                                 <motion.div
                                   className="h-full bg-primary"
                                   initial={{ width: 0 }}
@@ -110,13 +112,18 @@ export function Skills() {
                                   viewport={{ once: true }}
                                 />
                               </div>
-                              <span className="text-xs text-muted-foreground">
+                              <span className="text-[10px] sm:text-xs text-muted-foreground whitespace-nowrap flex-shrink-0 w-8 sm:w-auto">
                                 {item.rating}%
                               </span>
                             </div>
                           </TableCell>
-                          <TableCell className="text-right">
-                            <Badge variant="secondary">{item.experience}</Badge>
+                          <TableCell className="text-right p-2 sm:p-4">
+                            <Badge
+                              variant="secondary"
+                              className="whitespace-nowrap text-[10px] sm:text-xs px-1.5 sm:px-2.5"
+                            >
+                              {item.experience}
+                            </Badge>
                           </TableCell>
                         </TableRow>
                       );
