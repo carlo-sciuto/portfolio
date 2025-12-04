@@ -59,6 +59,32 @@ VITE_FEATURE_TESTIMONIALS=false
 
 See `.env.example` for all available options.
 
+**For GitHub Pages deployment**, set these as GitHub Secrets:
+
+1. Go to Settings > Secrets and variables > Actions
+2. Add the feature flags as repository secrets
+3. Update your GitHub Actions workflow to pass them during build
+
+## 🧪 Testing
+
+### Unit Tests
+
+```bash
+bun test                # Run unit tests
+bun test:ui            # Run with Vitest UI
+bun test:coverage      # Generate coverage report
+```
+
+### E2E Tests
+
+```bash
+bun test:e2e           # Run all E2E tests
+bun test:e2e:ui        # Run with Playwright UI
+bun test:e2e:headed    # Run with browser visible
+```
+
+**Note:** E2E tests will skip tests for disabled features. To test Projects and Certifications features, enable them via environment variables before running tests.
+
 ## 📲 PWA (Progressive Web App)
 
 This portfolio is installable as a Progressive Web App:

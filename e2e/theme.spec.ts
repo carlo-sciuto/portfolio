@@ -5,18 +5,20 @@ test.describe.configure({ mode: "parallel" });
 test.describe("Theme Persistence", () => {
   test("persists theme across reloads", async ({ page }) => {
     await page.goto("/");
+    await page.waitForLoadState("domcontentloaded");
 
     const toggleButton = page.getByRole("button", { name: /toggle theme/i });
     const html = page.locator("html");
 
     // Wait for hydration/initial render
-    await expect(toggleButton).toBeVisible();
+    await expect(toggleButton).toBeVisible({ timeout: 10000 });
 
     // Check initial state
     const isDarkInitially = await html.evaluate((el) => el.classList.contains("dark"));
 
     // 1. Toggle
     await toggleButton.click();
+    await page.waitForTimeout(300); // Allow theme transition
 
     // Wait for state change
     if (isDarkInitially) {
@@ -27,6 +29,9 @@ test.describe("Theme Persistence", () => {
 
     // 2. Reload and verify persistence
     await page.reload();
+    await page.waitForLoadState("domcontentloaded");
+    await expect(toggleButton).toBeVisible({ timeout: 10000 });
+
     if (isDarkInitially) {
       await expect(html).not.toHaveClass(/dark/);
     } else {
@@ -35,6 +40,7 @@ test.describe("Theme Persistence", () => {
 
     // 3. Toggle back
     await toggleButton.click();
+    await page.waitForTimeout(300); // Allow theme transition
 
     // Wait for state change back
     if (isDarkInitially) {
@@ -45,6 +51,9 @@ test.describe("Theme Persistence", () => {
 
     // 4. Reload and verify persistence
     await page.reload();
+    await page.waitForLoadState("domcontentloaded");
+    await expect(toggleButton).toBeVisible({ timeout: 10000 });
+
     if (isDarkInitially) {
       await expect(html).toHaveClass(/dark/);
     } else {

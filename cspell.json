@@ -1,0 +1,19 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    "dist-ssr",
+    "dev-dist",
+    "coverage",
+    "test-results",
+    "playwright-report",
+    "public/locales/**",
+    "*.log",
+    "package-lock.json",
+    "yarn.lock",
+    "pnpm-lock.yaml",
+    "bun.lock"
+  ]
+}
