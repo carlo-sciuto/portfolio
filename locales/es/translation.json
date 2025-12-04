@@ -4,13 +4,17 @@
     "about": "Sobre Mí",
     "experience": "Experiencia",
     "skills": "Habilidades",
+    "projects": "Proyectos",
+    "certifications": "Certificaciones",
     "contact": "Contacto"
   },
   "toggle_theme": "Cambiar tema",
   "hero": {
     "title": "Carlo Sciuto",
-    "role": "Senior Full Stack Developer",
-    "bio": "Como profesional de informática y desarrollo web altamente motivado, tengo más de una década de experiencia creando sitios web y aplicaciones atractivos y fáciles de usar."
+    "role": "Desarrollador Full Stack Senior",
+    "bio": "Como profesional altamente motivado en ciencias de la computación y desarrollo web, tengo más de una década de experiencia creando sitios web y aplicaciones atractivas y fáciles de usar.",
+    "downloadResume": "Descargar CV",
+    "enableGyroscope": "Activar Efecto 3D"
   },
   "about": {
     "title": "Biografía",
@@ -657,6 +661,88 @@
             "icon": "SiThunderbird"
           }
         ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "empty": "No se encontraron proyectos para la tecnología seleccionada.",
+    "loadMore": "Cargar Más Proyectos",
+    "items": [
+      {
+        "title": "Proyecto Ejemplo 1",
+        "description": "Una breve descripción de este increíble proyecto. Reemplaza con los detalles de tus proyectos reales.",
+        "technologies": ["React", "TypeScript", "Node.js"],
+        "featured": true,
+        "liveUrl": "https://example.com",
+        "githubUrl": "https://github.com/carlo-sciuto"
+      },
+      {
+        "title": "Proyecto Ejemplo 2",
+        "description": "Otro proyecto interesante que muestra diferentes tecnologías y habilidades.",
+        "technologies": ["Kotlin", "PostgreSQL", "GraphQL"],
+        "liveUrl": "https://example.com"
+      },
+      {
+        "title": "Proyecto Ejemplo 3",
+        "description": "Una solución innovadora que demuestra habilidades de resolución de problemas.",
+        "technologies": ["Docker", "Kubernetes", "Azure"],
+        "githubUrl": "https://github.com/carlo-sciuto"
+      },
+      {
+        "title": "Proyecto Ejemplo 4",
+        "description": "Una aplicación full-stack con arquitectura moderna y mejores prácticas.",
+        "technologies": ["React", "GraphQL", "PostgreSQL"],
+        "featured": false,
+        "liveUrl": "https://example.com",
+        "githubUrl": "https://github.com/carlo-sciuto"
+      },
+      {
+        "title": "Proyecto Ejemplo 5",
+        "description": "Plataforma de microservicios nativa en la nube con alta disponibilidad.",
+        "technologies": ["Kotlin", "Docker", "Kubernetes"],
+        "githubUrl": "https://github.com/carlo-sciuto"
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certificaciones y Badges",
+    "verify": "Verificar",
+    "items": [
+      {
+        "title": "Containers & Kubernetes Essentials",
+        "issuer": "IBM",
+        "date": "Emitido Feb 2023",
+        "credlyBadgeId": "01fbc5f3-5687-4509-bc32-46c2e0775a1f",
+        "credlyUrl": "https://www.credly.com/badges/01fbc5f3-5687-4509-bc32-46c2e0775a1f/public_url"
+      },
+      {
+        "title": "Docker Essentials: A Developer Introduction",
+        "issuer": "IBM",
+        "date": "Emitido Ene 2023",
+        "credlyBadgeId": "260ecae6-1c81-4801-9c6b-1f7b834192c9",
+        "credlyUrl": "https://www.credly.com/badges/260ecae6-1c81-4801-9c6b-1f7b834192c9/public_url"
+      },
+      {
+        "title": "Machine Learning with Python - Level 1",
+        "issuer": "IBM",
+        "date": "Emitido Ene 2023",
+        "credlyBadgeId": "493dcf42-6c86-4ac8-b203-d9a8cda21f84",
+        "credlyUrl": "https://www.credly.com/badges/493dcf42-6c86-4ac8-b203-d9a8cda21f84/public_url"
+      },
+      {
+        "title": "MongoDB Advanced Schema Design Patterns and Anti-patterns",
+        "issuer": "MongoDB",
+        "date": "Emitido Dic 2025",
+        "credlyBadgeId": "44b9c9a2-2f6a-4bc6-b003-f8c5c5f5bac8",
+        "credlyUrl": "https://www.credly.com/badges/44b9c9a2-2f6a-4bc6-b003-f8c5c5f5bac8/public_url"
+      },
+      {
+        "title": "MongoDB Schema Design Optimization Skill Badge",
+        "issuer": "MongoDB",
+        "date": "Emitido Dic 2025",
+        "credlyBadgeId": "4beb7ceb-75fb-4bcb-900a-02783cc6aac1",
+        "credlyUrl": "https://www.credly.com/badges/4beb7ceb-75fb-4bcb-900a-02783cc6aac1/public_url"
       }
     ]
   },
