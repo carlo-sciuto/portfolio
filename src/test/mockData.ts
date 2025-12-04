@@ -46,7 +46,7 @@ export const mockProjectsData = [
 
 export const mockExperienceData = [
   {
-    role: "Senior Full Stack Developer",
+    role: "Senior Software Engineer",
     company: "Tech Company Inc",
     period: "2020 - Present",
     description: "Leading development of microservices architecture and web applications",

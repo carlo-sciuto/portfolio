@@ -33,7 +33,7 @@ export function SEO({
     name: config.site.author,
     url: config.site.url,
     email: config.site.email,
-    jobTitle: "Senior Full Stack Developer",
+    jobTitle: "Senior Software Engineer",
     sameAs: [config.site.linkedin, config.site.github],
     description: config.site.description,
   };

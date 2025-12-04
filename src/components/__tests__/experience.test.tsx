@@ -8,7 +8,7 @@ vi.mock("react-i18next", () => ({
       if (key === "experience.items" && options?.returnObjects) {
         return [
           {
-            role: "Senior Full Stack Developer",
+            role: "Senior Software Engineer",
             company: "Tech Company",
             period: "2020 - Present",
             description: "Leading development of web applications",
@@ -35,7 +35,7 @@ describe("Experience Component", () => {
   it("displays all experience items", () => {
     render(<Experience />);
 
-    expect(screen.getByText("Senior Full Stack Developer")).toBeInTheDocument();
+    expect(screen.getByText("Senior Software Engineer")).toBeInTheDocument();
     expect(screen.getByText("Tech Company")).toBeInTheDocument();
     expect(screen.getByText("2020 - Present")).toBeInTheDocument();
 

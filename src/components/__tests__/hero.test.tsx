@@ -8,7 +8,7 @@ vi.mock("react-i18next", () => ({
     t: (key: string) => {
       const translations: Record<string, string> = {
         "hero.title": "Carlo Sciuto",
-        "hero.role": "Senior Full Stack Developer",
+        "hero.role": "Senior Software Engineer",
         "hero.bio": "Passionate developer with 10+ years of experience",
         "hero.enableGyroscope": "Enable 3D Effect",
       };
@@ -35,7 +35,7 @@ describe("Hero Component", () => {
     render(<Hero />);
 
     expect(screen.getByText("Carlo Sciuto")).toBeInTheDocument();
-    expect(screen.getByText("Senior Full Stack Developer")).toBeInTheDocument();
+    expect(screen.getByText("Senior Software Engineer")).toBeInTheDocument();
     expect(
       screen.getByText("Passionate developer with 10+ years of experience")
     ).toBeInTheDocument();

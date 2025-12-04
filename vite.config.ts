@@ -34,7 +34,7 @@ export default defineConfig({
       manifest: {
         name: "Carlo Sciuto - Portfolio",
         short_name: "Carlo Sciuto",
-        description: "Senior Full Stack Developer - Portfolio showcasing my work and skills",
+        description: "Senior Software Engineer - Portfolio showcasing my work and skills",
         theme_color: "#3b82f6",
         background_color: "#0f172a",
         display: "standalone",

@@ -81,7 +81,7 @@ vi.mock("react-i18next", () => ({
       }
       const translations: Record<string, string> = {
         "hero.title": "Carlo Sciuto",
-        "hero.role": "Senior Full Stack Developer",
+        "hero.role": "Senior Software Engineer",
         "hero.bio": "Developer bio",
         "about.title": "About",
         "experience.title": "Experience",

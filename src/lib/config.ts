@@ -15,7 +15,7 @@ export const config = {
   site: {
     url: import.meta.env.VITE_SITE_URL || "https://carlo-sciuto.github.io/portfolio",
     name: import.meta.env.VITE_SITE_NAME || "Carlo Sciuto - Portfolio",
-    description: import.meta.env.VITE_SITE_DESCRIPTION || "Senior Full Stack Developer",
+    description: import.meta.env.VITE_SITE_DESCRIPTION || "Senior Software Engineer",
     author: "Carlo Sciuto",
     email: "carlo.sciuto95@gmail.com",
     github: "https://github.com/carlo-sciuto",
