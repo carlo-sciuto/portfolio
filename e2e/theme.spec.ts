@@ -1,5 +1,7 @@
 import { test, expect } from "@playwright/test";
 
+test.describe.configure({ mode: "parallel" });
+
 test.describe("Theme Persistence", () => {
   test("persists theme across reloads", async ({ page }) => {
     await page.goto("/");
@@ -11,9 +13,7 @@ test.describe("Theme Persistence", () => {
     await expect(toggleButton).toBeVisible();
 
     // Check initial state
-    const isDarkInitially = await html.evaluate((el) =>
-      el.classList.contains("dark")
-    );
+    const isDarkInitially = await html.evaluate((el) => el.classList.contains("dark"));
 
     // 1. Toggle
     await toggleButton.click();

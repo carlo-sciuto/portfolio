@@ -10,6 +10,26 @@ export default defineConfig({
     environment: "jsdom",
     setupFiles: "./src/test/setup.ts",
     exclude: ["**/node_modules/**", "**/dist/**", "**/e2e/**"],
+    coverage: {
+      provider: "v8",
+      reporter: ["text", "json", "html", "lcov"],
+      exclude: [
+        "node_modules/",
+        "src/test/",
+        "**/*.d.ts",
+        "**/*.config.*",
+        "**/mockData",
+        "dist/",
+        ".eslintrc.cjs",
+        "vite.config.ts",
+      ],
+      thresholds: {
+        lines: 80,
+        functions: 65,
+        branches: 80,
+        statements: 80,
+      },
+    },
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },

@@ -52,9 +52,7 @@ export function Hero() {
                 alt="Carlo Sciuto"
                 className="object-cover"
               />
-              <AvatarFallback className="text-4xl bg-background">
-                CS
-              </AvatarFallback>
+              <AvatarFallback className="text-4xl bg-background">CS</AvatarFallback>
             </Avatar>
           </div>
         </motion.div>
@@ -69,26 +67,19 @@ export function Hero() {
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
           {t("hero.title")}
         </h1>
-        <p className="text-xl text-muted-foreground font-medium">
-          {t("hero.role")}
-        </p>
+        <p className="text-xl text-muted-foreground font-medium">{t("hero.role")}</p>
         <p className="text-muted-foreground leading-relaxed">{t("hero.bio")}</p>
 
         {isMobile && !permissionGranted && (
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.5 }}
-            className="pt-4"
+            className="flex justify-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
           >
-            <Button
-              onClick={handleEnableGyroscope}
-              variant="outline"
-              size="sm"
-              className="gap-2"
-            >
+            <Button onClick={handleEnableGyroscope} variant="outline" size="sm" className="gap-2">
               <Smartphone className="h-4 w-4" />
-              Enable 3D Gyroscope Effect
+              {t("hero.enableGyroscope", "Enable 3D Effect")}
             </Button>
           </motion.div>
         )}

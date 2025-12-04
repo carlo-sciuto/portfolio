@@ -16,6 +16,10 @@ A modern, responsive, and internationalized portfolio website built with the lat
 - 🌍 **Multi-language:** Seamless switching between EN, IT, and ES.
 - 📱 **Responsive:** Fully optimized for all device sizes.
 - ⚡ **Fast:** Built with Vite for lightning-fast performance.
+- 📲 **PWA Support:** Install as an app, works offline with service worker caching.
+- 🔍 **SEO Optimized:** Meta tags, Open Graph, JSON-LD structured data, and sitemap.
+- 🎯 **Feature Flags:** Control visibility of sections via environment variables.
+- 🔧 **Developer Tools:** Husky hooks, commitlint, lint-staged, prettier.
 
 ## 🏃‍♂️ Running Locally
 
@@ -41,6 +45,36 @@ A modern, responsive, and internationalized portfolio website built with the lat
    npm run dev
    ```
 
+## 🔐 Environment Variables
+
+Create a `.env` file in the root directory to enable optional features:
+
+```bash
+# Feature Flags
+VITE_FEATURE_PROJECTS=true
+VITE_FEATURE_CERTIFICATIONS=true
+VITE_FEATURE_BLOG=false
+VITE_FEATURE_TESTIMONIALS=false
+```
+
+See `.env.example` for all available options.
+
+## 📲 PWA (Progressive Web App)
+
+This portfolio is installable as a Progressive Web App:
+
+- **Offline Support:** Core content cached and available offline
+- **Install Prompt:** Users can install it like a native app
+- **Auto Updates:** Service worker updates automatically
+- **Optimized Caching:** Fonts, images, and assets cached strategically
+
+### Testing PWA Locally
+
+1. Build the project: `bun run build`
+2. Preview: `bun run preview`
+3. Open Chrome DevTools > Application tab
+4. Check Manifest and Service Workers
+
 ## 📦 Deployment
 
 This project is configured to deploy to GitHub Pages.
@@ -48,6 +82,8 @@ This project is configured to deploy to GitHub Pages.
 ```bash
 bun run deploy
 ```
+
+The PWA service worker will be automatically registered in production.
 
 ## 📄 License
 

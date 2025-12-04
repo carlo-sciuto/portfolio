@@ -3,13 +3,8 @@ import { LanguageToggle } from "./language-toggle";
 import { useTranslation } from "react-i18next";
 import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetClose,
-  SheetTitle,
-} from "./ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "./ui/sheet";
+import { config } from "@/lib/config";
 
 export function Navbar() {
   const { t } = useTranslation();
@@ -74,6 +69,26 @@ export function Navbar() {
                       {t("nav.skills")}
                     </button>
                   </SheetClose>
+                  {config.features.projects && (
+                    <SheetClose asChild>
+                      <button
+                        onClick={() => scrollToSection("projects")}
+                        className="text-left transition-colors hover:text-foreground/80 text-foreground/60"
+                      >
+                        {t("nav.projects")}
+                      </button>
+                    </SheetClose>
+                  )}
+                  {config.features.certifications && (
+                    <SheetClose asChild>
+                      <button
+                        onClick={() => scrollToSection("certifications")}
+                        className="text-left transition-colors hover:text-foreground/80 text-foreground/60"
+                      >
+                        {t("nav.certifications")}
+                      </button>
+                    </SheetClose>
+                  )}
                   <SheetClose asChild>
                     <button
                       onClick={() => scrollToSection("contact")}
@@ -88,10 +103,7 @@ export function Navbar() {
           </Sheet>
         </div>
         <div className="mr-4 md:hidden">
-          <button
-            onClick={() => scrollToSection("hero")}
-            className="flex items-center space-x-2"
-          >
+          <button onClick={() => scrollToSection("hero")} className="flex items-center space-x-2">
             <span className="font-bold">Carlo Sciuto</span>
           </button>
         </div>
@@ -100,9 +112,7 @@ export function Navbar() {
             onClick={() => scrollToSection("hero")}
             className="mr-6 flex items-center space-x-2"
           >
-            <span className="hidden font-bold sm:inline-block">
-              Carlo Sciuto
-            </span>
+            <span className="hidden font-bold sm:inline-block">Carlo Sciuto</span>
           </button>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             <button
@@ -129,6 +139,22 @@ export function Navbar() {
             >
               {t("nav.skills")}
             </button>
+            {config.features.projects && (
+              <button
+                onClick={() => scrollToSection("projects")}
+                className="transition-colors hover:text-foreground/80 text-foreground/60"
+              >
+                {t("nav.projects")}
+              </button>
+            )}
+            {config.features.certifications && (
+              <button
+                onClick={() => scrollToSection("certifications")}
+                className="transition-colors hover:text-foreground/80 text-foreground/60"
+              >
+                {t("nav.certifications")}
+              </button>
+            )}
             <button
               onClick={() => scrollToSection("contact")}
               className="transition-colors hover:text-foreground/80 text-foreground/60"
